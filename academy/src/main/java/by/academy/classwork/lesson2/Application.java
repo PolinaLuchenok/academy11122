@@ -12,6 +12,9 @@ public class Application {
 		cat1.grow();
 		cat1.grow();
 		cat1.grow();
-		cat1.getAge();
+		
+		int catAge = cat1.getAge();
+
+		System.out.println(catAge);
 	}
 }
