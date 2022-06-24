@@ -7,6 +7,13 @@ public class Cat {
 	char initials;
 	boolean isHomeAnimal;
 
+	public Cat() {
+	}
+
+	public Cat(String nickname) {
+		this.nickname = nickname;
+	}
+	
 	public void grow() {
 		age++;
 	}
@@ -21,14 +28,6 @@ public class Cat {
 
 	public void walk() {
 		System.out.println("Кот гуляет");
-	}
-
-	public Cat() {
-
-	}
-
-	public Cat(String nickname) {
-		this.nickname = nickname;
 	}
 
 	public int getAge() {
