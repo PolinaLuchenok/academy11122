@@ -20,7 +20,7 @@ public class Application {
 		
 		CustomDate newDate1 = new CustomDate(date);
 		
-		newDate1.outputDayOfWeek();
+		newDate1.getDayOfWeek();
 		newDate1.checkLeapYear();
 		
 		System.out.println("Введите день второй даты в формате dd!");
@@ -34,7 +34,7 @@ public class Application {
 		
         CustomDate newDate2 = new CustomDate(dateDay, dateMonth, dateYear);
         
-        newDate2.outputDayOfWeek();
+        newDate2.getDayOfWeek();
         newDate2.checkLeapYear();
         newDate2.calculateDays(newDate1);
 

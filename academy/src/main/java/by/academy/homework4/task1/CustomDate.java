@@ -95,9 +95,34 @@ public class CustomDate {
 		}
 	}
 	
-	public void outputDayOfWeek() {
+	public void getDayOfWeek() {
 		DayOfWeek dayOfWeek = LocalDate.of(year.getYear(), month.getMonth(), day.getDay()).getDayOfWeek();
-		System.out.println("День недели: " + dayOfWeek);
+		final int numberDay = dayOfWeek.getValue();
+		DaysOfWeek allDays[] = DaysOfWeek.values();
+		switch(numberDay) {
+		case 1:
+			System.out.println("День недели: " + allDays[0]);
+			break;
+		case 2:
+			System.out.println("День недели: " + allDays[1]);
+			break;
+		case 3:
+			System.out.println("День недели: " + allDays[2]);
+			break;
+		case 4:
+			System.out.println("День недели: " + allDays[3]);
+			break;
+		case 5:
+			System.out.println("День недели: " + allDays[4]);
+			break;
+		case 6:
+			System.out.println("День недели: " + allDays[5]);
+			break;
+		case 7:
+			System.out.println("День недели: " + allDays[6]);
+			break;
+		}
+		
 	}
 	
 	public void calculateDays(CustomDate otherCustomDate) {
